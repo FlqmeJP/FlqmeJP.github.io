@@ -125,7 +125,51 @@ img{
 
 }
 
-/* 大きな背景画像 */
+/* 大きな背景画像（animation css) */
+
+@keyframes image-switch-animation {
+
+    0%{ opacity: 0;}
+    5%{ opacity: 1;}
+    25%{ opacity: 1;}
+    30%{ opacity: 0;}
+    100%{ opacity: 0;}
+
+}
+
+.image:nth-of-type(1) {
+    animation-delay: 0s;
+  }
+  .image:nth-of-type(2) {
+    animation-delay: 5s;
+  }
+  .image:nth-of-type(3) {
+    animation-delay: 10s;
+  }
+  .image:nth-of-type(4) {
+    animation-delay: 15s;
+  }
+  .image:nth-of-type(5) {
+    animation-delay: 20s;
+  }
+
+.src1{
+
+    background-image: url(../images/20B8B9ED-DCD1-48B5-9B50-773694A548BB.jpg)
+
+}
+
+.src2{
+
+    background-image: url(../images/67F8549C-9AD9-4C26-B666-71004B18296D.jpg)
+
+}
+
+.src3{
+
+    background-image: url(../images/E3E35D9A-D8FD-42BF-B9FD-DE9BA3673D58.jpg)
+
+}
 
 .big-bg{
 
@@ -138,6 +182,8 @@ img{
    
     background-image: url(../images/main-bg.jpg);
     min-height: 100vh;
+    animation: image-switch-animation 25s infinite;
+
 
 }
 
@@ -146,3 +192,5 @@ img{
     text-transform : none;
     
 }
+
+
