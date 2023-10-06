@@ -7,6 +7,22 @@
         <meta name="description" content="[サイトの説明]">
         <link rel="icon" type="image/png" href="images/logo.png">
 
+        <!-- Java Script-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.slider').bxSlider({
+                        auto: true,
+                        pause: 5000,
+                    });
+                });
+        </script>
+        
+
+
         <!-- CSS-->
             <link rel ="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
             <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
@@ -39,8 +55,6 @@
 
             </div><!-- /.home-content -->
         </div><!-- /#home-->
-
-
 
 
     </body>

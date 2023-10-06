@@ -135,8 +135,8 @@ img{
 }
 
 #home{
-
-    background-image: url(背景画像の選択);
+   
+    background-image: url(../images/main-bg.jpg);
     min-height: 100vh;
 
 }
