@@ -22,22 +22,32 @@
             <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
             <link href="css/style.css" rel="stylesheet">
 
+
     </head>
 
     <body>
-        <div id="home" class="big-bg">
-            <header class="page-header wrapper">
 
-             <h1><a href="index.html"><img class="logo" src="[画像]" alt="Cafe Greenery"></a></h1>
+        <!-- ローディングアニメーション　-->
+        <div id="splash">
+            <div id="splash_logo">
+                <img src="images/logo.png" alt="logo" class="fadeUp"></div><!--画像部分は適宜差し換えてください-->
+            <!--/splash--></div>
+        </div>
+
+            <div id="container">
+                <div id="home" class="big-bg">
+                    <header class="page-header wrapper">
+
+                        <h1><a href="index.html"><img class="logo" src="[画像]" alt="Cafe Greenery"></a></h1>
             
-                <nav>
-                    <ul class="main-nav">
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+                            <nav>
+                                <ul class="main-nav">
+                                    <li><a href="news.html">News</a></li>
+                                    <li><a href="menu.html">Menu</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                    </header>
 
             <div class ="home-content wrapper">
 
@@ -48,8 +58,12 @@
                 <a class="button" href="menu.html">メニューを見る</a>
 
 
-            </div><!-- /.home-content -->
-        </div><!-- /#home-->
+                </div><!-- /.home-content -->
+                </div><!-- /#home-->
+            <!--/container--></div>
 
-    </body>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/animation.js"></script>
+
+</body>
 </html>

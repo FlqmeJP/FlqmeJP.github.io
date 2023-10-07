@@ -45,6 +45,8 @@ img{
     margin-top: 34px;
     list-style: none;
 
+    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+
 }
 
 .main-nav li{
@@ -336,6 +338,7 @@ footer p{
 
     font-size: 1.125rem;
     margin: 10px 0 0;
+    text-align:center;
 
 }
 
@@ -374,11 +377,17 @@ footer p{
 
 }
 
-.page-info{
+.contact-content p{
 
     font-size: 1.125rem;
     margin: 10px 0 0;
-    padding-right: 3em;
+    text-align: center;
+
+}
+
+.contact-content .page-title{
+
+    text-align: center;
 
 }
 
@@ -443,6 +452,98 @@ footer p{
 
 }
 
+/*animation css 
+--------------------------------------------------------*/
+
+/* Loading背景画面設定　*/
+#splash {
+    /*fixedで全面に固定*/
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background:#333;
+      text-align:center;
+      color:#fff;
+    }
+    
+    /* Loading画像中央配置　*/
+    #splash_logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    /* Loading アイコンの大きさ設定　*/
+    #splash_logo img {
+      width:260px;
+    }
+    
+    /* fadeUpをするアイコンの動き */
+    .fadeUp{
+    animation-name: fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    
+    .main-nav li a{
+        display: block;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .main-nav li{
+        margin-bottom:20px;
+    }
+    
+    /*==================================================
+    　5-3-3 左から右に線が伸びる（下部）
+    ===================================*/
+    .main-nav li a{
+        /*線の基点とするためrelativeを指定*/
+        position: relative;
+    }
+    
+    .main-nav li.current a,
+    .main-nav li a:hover{
+        color:#0481A2;
+    }
+    
+    .main-nav li a::after {
+        content: '';
+        /*絶対配置で線の位置を決める*/
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        /*線の形状*/
+        width: 80%;
+        height: 2px;
+        background:#0481A2;
+        /*アニメーションの指定*/
+        transition: all .3s;
+        transform: scale(0, 1);/*X方向0、Y方向1*/
+        transform-origin: left top;/*左上基点*/
+    }
+    
+    /*現在地とhoverの設定*/
+    .main-nav li.current a::after,
+    .main-nav li a:hover::after {
+        transform: scale(1, 1);/*X方向にスケール拡大*/
+    }
 
 /* モバイル版
 ---------------------------------------------------*/
