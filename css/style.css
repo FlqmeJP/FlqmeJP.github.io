@@ -170,7 +170,8 @@ img{
 
 article{
 
-    width: 74%;
+    width: 60%;
+    order: 2;
 
 }
 
@@ -179,6 +180,13 @@ article{
 aside{
 
     width: 22%;
+    order:3;
+
+}
+
+.ad{
+
+    order:1;
 
 }
 
@@ -187,7 +195,7 @@ aside{
     position: relative;
     padding-top: 4px;
     margin-bottom: 40px;
-
+   
 }
 
 .post-date{
@@ -545,6 +553,129 @@ footer p{
         transform: scale(1, 1);/*X方向にスケール拡大*/
     }
 
+    
+    /* 滑らかに変形して出現 */
+.smooth{
+	animation-name:smoothAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+  transform-origin:left;
+	opacity:0;
+}
+
+@keyframes smoothAnime{
+  from {
+  transform:translate3d(0, 100%, 0) skewY(12deg);
+  opacity:0;
+  }
+
+  to {
+  transform:translate3d(0, 0, 0) skewY(0);
+  opacity:1;
+  }
+}
+
+/*========= 画面遷移のためのCSS ===============*/
+
+/*画面遷移アニメーション*/
+
+
+body.appear{
+    background:#fff;/*画面を開いた後の背景色を指定*/
+}
+
+.splashbg{
+	position: fixed;
+	top: 0;
+	right:0;
+	bottom:0;
+	left: 0;
+	border-width: 0px;/*開始はボーダーの太さは0*/
+	border-style:solid;
+    border-color: #666;/*拡大する四角の色*/
+	animation-duration:.5s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes backBoxAnime{
+	99.9% {/*アニメーション終了ぎりぎりまで*/
+        z-index: 2;/*最前面に*/
+		border-width: 0px;/*開始はボーダーの太さは0*/
+	}
+    100%{
+       z-index: -1; /*最背面に*/
+        border-width: 0px;/*終了はボーダーの太さは0*/
+    }
+}
+
+/*画面遷移の後現れるコンテンツ設定*/
+#container{
+    position: relative;
+	opacity: 0;/*はじめは透過0に*/
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear #container{
+	animation-name:PageAnimeAppear;
+	animation-duration:1s;
+	animation-delay:0.2s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+@keyframes PageAnimeAppear{
+	0% {
+	opacity: 0;
+	}
+	100% {
+	opacity: 1;
+}
+}
+
+/* ぼかしから出現 */
+.blur{
+	animation-name:blurAnime;
+	animation-duration:5s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+	filter: blur(10px);
+	transform: scale(1.02);
+  }
+
+  to {
+	filter: blur(0);
+	transform: scale(1);
+  }
+}
+
+/* 左へ */
+.flipLeft{
+    animation-name:flipLeftAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    perspective-origin:left center;
+    opacity:0;
+    }
+    
+    @keyframes flipLeftAnime{
+      from {
+       transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+         opacity: 0;
+      }
+    
+      to {
+      transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+      opacity: 1;
+      }
+
+      
+    }
+    
+
+
 /* モバイル版
 ---------------------------------------------------*/
 
@@ -604,6 +735,12 @@ footer p{
     #news .page-title{
 
         margin-top: 30px;
+
+    }
+
+    .ad{
+
+        display:none;
 
     }
 
@@ -699,6 +836,7 @@ footer p{
     #sns .wrapper{
 
         flex-direction: column;
+        overflow:hidden;
 
     }
 
@@ -719,3 +857,5 @@ footer p{
     
     
 }
+
+
