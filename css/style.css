@@ -444,7 +444,7 @@ footer p{
 #sns .wrapper{
 
     display: flex;
-    justify-content: space-between;
+    
 
 }
 
@@ -458,6 +458,16 @@ footer p{
 
     width: 30%;
 
+}
+
+
+.fix{
+
+
+    padding-left:180px;
+    padding-bottom :100px;
+ 
+    
 }
 
 /*animation css 
@@ -851,10 +861,10 @@ body.appear #container{
     .sns-box{   
 
     margin-bottom: 30px;
-
-    }
-
     
+
+    }    
+
     
 }
 
