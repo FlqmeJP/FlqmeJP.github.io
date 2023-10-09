@@ -138,7 +138,7 @@ img{
 
 #home{
    
-    background-image: url(../images/main-bg.jpg);
+    background-image: url(../home/7);
     min-height: 100vh;
 
 }
@@ -355,8 +355,9 @@ footer p{
     display:grid;
     gap: 26px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 6%;
+    margin-top: 30px;
     margin-bottom: 50px;
+    padding-bottom:50px;
 
 }
 
@@ -375,6 +376,21 @@ footer p{
 
 }
 
+.sub-title_big{
+
+    font-size: 1.375rem;
+    padding:  30px 8px 0px;
+    border-bottom:2px brown solid;
+    font-weight: normal;
+}
+
+.hojo{
+
+
+    text-align:center;
+
+    
+}
 /* Contact
 ---------------------------------------------------*/
 
@@ -470,6 +486,7 @@ footer p{
     
 }
 
+
 /*animation css 
 --------------------------------------------------------*/
 
@@ -480,10 +497,27 @@ footer p{
       width: 100%;
       height: 100%;
       z-index: 999;
-      background:#333;
+      background:white;
       text-align:center;
       color:#fff;
     }
+
+    /* Loadingバー中央配置　*/
+#splash_text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    z-index: 999;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+    height: 2px;
+}
+
     
     /* Loading画像中央配置　*/
     #splash_logo {
@@ -683,6 +717,20 @@ body.appear #container{
 
       
     }
+
+    /*==================================================
+スライダーのためのcss
+===================================*/
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
     
 
 
