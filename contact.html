@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Greenery - Contact</title>
         <meta name="description" content="[サイトの説明]">
-        <link rel="icon" type="image/png" href=[ファビコン]>
+        <link rel="icon" type="image/png" href="images/logo.png">
 
         <!-- CSS-->
             <link rel ="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -16,6 +16,8 @@
     </head>
 
     <body>
+        <div class="over">
+
         <div id="splash">
             <div id="splash_text">お待たせ致しました！<br>まもなく読み込まれます！
             </div>
@@ -25,10 +27,13 @@
         <div id="contact" class="big-bg">
             <header class="page-header wrapper">
 
-             <h1><a href="index.html"><img class="logo" src="[画像]" alt="Cafe Greenery"></a></h1>
-            
+                <div class="logo">
+                    <p>Cafe Greenery</p>
+                    </div>
+                    
                 <nav>
                     <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="menu.html">Menu</a></li>
                         <li class="current"><a href="contact.html">Contact</a></li>
@@ -38,9 +43,11 @@
 
             <div class="contact-content wrapper">
                 <div class="flipLeft">
+                    <div class="hojo1">
                 <h2 class="page-title">Contact</h2>
 
                 <p>インスタグラム、Facebookの情報が載っております </p>
+                </div>
                 </div>
             </div>
         </div><!-- #contact -->
@@ -105,11 +112,8 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
-    <!--IE11用-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script><!--不必要なら削除-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script><!--不必要なら削除-->
     <!--自作のJS-->
     <script src="js/animation.js"></script>
-
+</div>
     </body>
 </html>

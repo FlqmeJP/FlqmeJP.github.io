@@ -111,3 +111,11 @@ $('.slider').slick({
   }
 ]
 });
+
+window.addEventListener('resize', function () {
+  if (window.innerWidth < 600) {
+    // Galaxy Fold折りたたまれた状態向けのスタイルを適用
+  } else {
+    // Galaxy Fold展開された状態向けのスタイルを適用
+  }
+});

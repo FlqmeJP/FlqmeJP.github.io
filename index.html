@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cafe Greenery</title>
         <meta name="description" content="[サイトの説明]">
-        <link rel="icon" type="image/png" href=[ファビコン]>
+        <link rel="icon" type="image/png" href="images/logo.png">
 
 
         <!-- OGP -->
@@ -26,11 +26,12 @@
     </head>
 
     <body>
+        <div class="over">
 
         <!-- ローディングアニメーション　-->
         <div id="splash">
             <div id="splash_logo">
-                <img src="images/biglogo.png" alt="logo" class="fadeUp"></div><!--画像部分は適宜差し換えてください-->
+                <img src="images/logo12.png" alt="logo" class="fadeUp"></div><!--画像部分は適宜差し換えてください-->
             <!--/splash--></div>
         </div>
 
@@ -41,11 +42,13 @@
                 <div id="home" class="big-bg">
                     <header class="page-header wrapper">
 
-
-                        <h1><a href="index.html"><img class="logo" src="[画像]" alt="Cafe Greenery"></a></h1>
+                        <div class="logo">
+                        <p>Cafe Greenery</p>
+                        </div>
             
                             <nav>
                                 <ul class="main-nav">
+                                    <li class="current"><a href="index.html">Home</a></li>
                                     <li><a href="news.html">News</a></li>
                                     <li><a href="menu.html">Menu</a></li>
                                     <li><a href="contact.html">Contact</a></li>
@@ -55,11 +58,14 @@
 
             <div class ="home-content wrapper">
                 <div class="blur">
+                    <div class="color">
                 <h2 class="page-title">We'll Make Your Day</h2>
+                        </div>
               
                 
-                
+                        
                 <p>おしゃれなカフェで癒されてみませんか？</p>
+               
 
 
                 <a class="button" href="menu.html">メニューを見る</a>
@@ -73,6 +79,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="js/animation.js"></script>
         
+            </div>
        
 </body>
 </html>

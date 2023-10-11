@@ -32,10 +32,21 @@ img{
 ----------------------------------*/
 .logo{
 
-    width:210px;
-    margin-top: 14px;
+    width:300px;
+    padding-top:19px;
+    font-size:40px;
+    padding-left:30px;
 
 }
+
+.logo p{
+
+    color:#432;
+    font-family:"Monotype Corsiva";
+    
+}
+
+
 
 .main-nav{
 
@@ -44,6 +55,7 @@ img{
     text-transform: uppercase;
     margin-top: 34px;
     list-style: none;
+    
 
     flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
 
@@ -51,7 +63,8 @@ img{
 
 .main-nav li{
 
-    margin-left: 36px;
+    margin-left: 30px;
+    
 
 }
 
@@ -95,7 +108,8 @@ img{
 
     font-size: 1.123rem;
     margin: 10px 0 42px;
-    
+    font-size:30px;
+
 }
 
 /* 見出し　*/
@@ -108,6 +122,13 @@ img{
     font-weight: normal;
 
 }
+
+.page-title p{
+
+    color:#432;
+    font-size:50px;
+}
+
 
 /* ボタン */
 
@@ -138,8 +159,9 @@ img{
 
 #home{
    
-    background-image: url(../home/7);
+    background-image: url(../home/coffee_12.jpg);
     min-height: 100vh;
+   
 
 }
 
@@ -154,7 +176,7 @@ img{
 
 #news{
 
-    background-image: url(../images/news-bg.jpg);
+    background-image: url(../home/1234.jpg);
     height: 270px;
     margin-bottom: 40px
 
@@ -163,6 +185,7 @@ img{
 #news .page-title{
 
     text-align: center;
+   
 
 }
 
@@ -187,7 +210,7 @@ aside{
 .ad{
 
     order:1;
-
+    width:125px;
 }
 
 .post-info{
@@ -308,7 +331,7 @@ footer{
 
     background: #432;
     text-align: center;
-    padding: 26px 0;
+    padding: 26px 0 ;
 
 }
 
@@ -324,7 +347,8 @@ footer p{
 
 #menu{
 
-    background-image: url(../images/menu-bg.jpg);
+    background-image: url(../DessertMenu/aburikyarameru32.jpg);
+    object-fit:none;
     min-height: 100vh;
 
 }
@@ -396,8 +420,9 @@ footer p{
 
 #contact{
 
-    background-image: url(../images/contact-bg.jpg);
+    background-image: url(../DessertMenu/_koubashi1.jpg);
     min-height: 100vh;
+    
 
 }
 
@@ -445,6 +470,13 @@ footer p{
 .location-map{
 
     width: 74%;
+
+}
+
+.hojo1{
+
+font-size:7rem;
+
 
 }
 
@@ -529,7 +561,7 @@ footer p{
     
     /* Loading アイコンの大きさ設定　*/
     #splash_logo img {
-      width:260px;
+      width:800px;
     }
     
     /* fadeUpをするアイコンの動き */
@@ -739,6 +771,12 @@ body.appear #container{
 
 @media (max-width: 600px){
 
+
+    .logo{
+
+        text-align:center;
+    }
+
     .page-title{
 
         font-size:2.5rem;
@@ -756,7 +794,7 @@ body.appear #container{
 
     .main-nav li{
 
-        margin: 0 20px;
+        margin: 0 3px;
 
     }
 
@@ -768,12 +806,21 @@ body.appear #container{
 
     }
 
+    .home-content p{
+
+        font-size:20px;
+    }
+
     .page-header{
 
         flex-direction: column;
         align-items: center;
 
     }
+
+    
+
+    
 
     /*News*/
 
@@ -911,9 +958,11 @@ body.appear #container{
     margin-bottom: 30px;
     
 
-    }    
+    }     
+    
+    #splash_logo img {
+        width:450px;
+      }
 
     
 }
-
-
