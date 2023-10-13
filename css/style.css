@@ -420,7 +420,7 @@ footer p{
 
 #contact{
 
-    background-image: url(../DessertMenu/_koubashi1.jpg);
+    background-image: url(../DessertMenu/yuzu1.jpg);
     min-height: 100vh;
     
 
@@ -431,6 +431,7 @@ footer p{
     font-size: 1.125rem;
     margin: 10px 0 0;
     text-align: center;
+    color:#432;
 
 }
 
@@ -473,12 +474,7 @@ footer p{
 
 }
 
-.hojo1{
 
-font-size:7rem;
-
-
-}
 
 /* sns */
 
@@ -567,7 +563,7 @@ font-size:7rem;
     /* fadeUpをするアイコンの動き */
     .fadeUp{
     animation-name: fadeUpAnime;
-    animation-duration:0.5s;
+    animation-duration:0.4s;
     animation-fill-mode:forwards;
     opacity: 0;
     }
@@ -669,7 +665,7 @@ body.appear{
 	border-width: 0px;/*開始はボーダーの太さは0*/
 	border-style:solid;
     border-color: #666;/*拡大する四角の色*/
-	animation-duration:.5s;
+	animation-duration:.35s;
 	animation-fill-mode:forwards;
 }
 
@@ -932,7 +928,13 @@ body.appear #container{
     #contact .page-title{
 
         margin-top:40px;
+        text-align:center;
 
+    }
+
+    .logo p{
+
+        padding-right:20px;
     }
 
     /*　店舗情報 */
@@ -952,6 +954,15 @@ body.appear #container{
         width: 100%;
 
     }
+
+    .contact-content p{
+
+        font-size: 1.15rem;
+        margin: 10px 0 0;
+        text-align: center;
+        color:#432;}
+
+   
 
     .sns-box{   
 
