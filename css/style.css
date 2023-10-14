@@ -171,6 +171,8 @@ img{
     
 }
 
+
+
 /* News
 ----------------------------------------------*/
 
@@ -324,6 +326,15 @@ aside p{
 
 }
 
+.marker{
+
+    background: linear-gradient(transparent 70% , yellow 70%);
+}
+
+.sukima{
+
+padding-top:40px;
+}
 /*フッター
 ------------------------------------------------*/
 
@@ -368,9 +379,10 @@ footer p{
 
 .menu-content p{
 
-    font-size: 1.125rem;
+    font-size: 1.475rem;
     margin: 10px 0 0;
     text-align:center;
+    font-weight:bold;
 
 }
 
@@ -400,6 +412,11 @@ footer p{
 
 }
 
+.nishu{
+
+    padding-top:100px;
+}
+
 .sub-title_big{
 
     font-size: 1.375rem;
@@ -415,6 +432,11 @@ footer p{
 
     
 }
+.wakusen{
+
+    border:2px solid #000000;
+}
+
 /* Contact
 ---------------------------------------------------*/
 
@@ -428,7 +450,8 @@ footer p{
 
 .contact-content p{
 
-    font-size: 1.125rem;
+    font-size: 1.475rem;
+    font-weight:bold;
     margin: 10px 0 0;
     text-align: center;
     color:#432;
@@ -557,7 +580,7 @@ footer p{
     
     /* Loading アイコンの大きさ設定　*/
     #splash_logo img {
-      width:800px;
+      width:600px;
     }
     
     /* fadeUpをするアイコンの動き */
@@ -900,6 +923,11 @@ body.appear #container{
 
     }
 
+    .menu-content p{
+
+        font-size:1.25rem;
+    }
+
     .grid{
 
         display: grid;
@@ -957,7 +985,7 @@ body.appear #container{
 
     .contact-content p{
 
-        font-size: 1.15rem;
+        font-size: 1.25rem;
         margin: 10px 0 0;
         text-align: center;
         color:#432;}
@@ -972,7 +1000,7 @@ body.appear #container{
     }     
     
     #splash_logo img {
-        width:450px;
+        width:650px;
       }
 
     
