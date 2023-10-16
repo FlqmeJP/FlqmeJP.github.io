@@ -42,7 +42,8 @@ img{
 .logo p{
 
     color:#432;
-    font-family:"Monotype Corsiva";
+    font-size:30px;
+    
     
 }
 
@@ -959,6 +960,7 @@ body.appear #container{
     .logo p{
 
         padding-right:20px;
+        font-size:25px;
     }
 
     /*　店舗情報 */
