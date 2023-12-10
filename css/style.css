@@ -336,6 +336,17 @@ aside p{
 
 padding-top:40px;
 }
+
+.center{
+    text-align:center;
+}
+
+.chiristmas{
+    font-size:1.375rem;
+    font:normal;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align:center ;
+}
 /*フッター
 ------------------------------------------------*/
 
@@ -432,6 +443,11 @@ footer p{
     text-align:center;
 
     
+}
+
+.border1{
+
+    border-bottom:brown solid;
 }
 
 /* Contact
